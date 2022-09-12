@@ -1,0 +1,30 @@
+
+post http://localhost:4000/register
+Content-Type: application/json
+
+{
+  "username": "nitinp",
+  "name": "Nitin Pathak",
+  "password": "nitin123",
+  "gender": "male",
+  "location": "Detroit"
+}
+
+###
+post http://localhost:4000/login
+Content-Type: application/json
+
+{
+  "username": "nitinp",
+  "password": "nitin123"
+}
+
+###
+put http://localhost:4000/change-password
+Content-Type: application/json
+
+{
+  "username": "nitinp",
+  "oldPassword": "nitin123",
+  "newPassword": "richard"
+}
